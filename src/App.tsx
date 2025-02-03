@@ -2,6 +2,18 @@ import { useState, useEffect } from "react";
 import { SiPhp, SiJavascript, SiCss3, SiHtml5, SiMysql, SiPostgresql, SiNestjs, SiJquery, SiCodeigniter, SiBootstrap, SiLaravel } from "react-icons/si";
 import Profile from "../src/assets/me.jpg"
 
+import Kehadiran from "../src/assets/kehadiran.png"
+import Feedback from "../src/assets/feedback.png"
+import NarAntigen from "../src/assets/NAR-antigen.png"
+import NarPCR from "../src/assets/NAR-tc.png"
+import SikdaNG from "../src/assets/sikda-ng.png"
+import SikdaG from "../src/assets/SIKDAG.png" 
+import ProeduGuru from "../src/assets/landing-guru.png"  
+import ProeduMurid from "../src/assets/landing-murid.png"  
+
+import LogoKemkes from "../src/assets/kemkesjpg.jpg" 
+import LogoProedu from "../src/assets/proedu.jpg"
+
 export default function ProfilePage() {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark"
@@ -39,14 +51,14 @@ export default function ProfilePage() {
   ];
 
   const portfolioItems = [
-    { id: 1, title: "Kehadiran", image: "../src/assets/kehadiran.png" },
-    { id: 2, title: "Partisipasi Sehat", image: "../src/assets/feedback.png" },
-    { id: 3, title: "NAR Antgien", image: "../src/assets/NAR-antigen.png" },
-    { id: 4, title: "NAR PCR", image: "../src/assets/NAR-tc.png" },
-    { id: 5, title: "SIKDA NG", image: "../src/assets/sikda-ng.png" },
-    { id: 6, title: "SIKDA Generik", image: "../src/assets/SIKDAG.png" },
-    { id: 7, title: "Proedu Guru", image: "../src/assets/landing-guru.png" },
-    { id: 8, title: "Proedu Lending", image: "../src/assets/landing-murid.png" },
+    { id: 1, title: "Kehadiran", image: Kehadiran },
+    { id: 2, title: "Partisipasi Sehat", image: Feedback },
+    { id: 3, title: "NAR Antgien", image: NarAntigen },
+    { id: 4, title: "NAR PCR", image: NarPCR },
+    { id: 5, title: "SIKDA NG", image: SikdaNG },
+    { id: 6, title: "SIKDA Generik", image: SikdaG },
+    { id: 7, title: "Proedu Guru", image: ProeduGuru},
+    { id: 8, title: "Proedu Lending", image: ProeduMurid },
   ];
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors max-w-screen-sm mx-auto">
@@ -90,7 +102,7 @@ export default function ProfilePage() {
             <div className="flex gap-4 sm:gap-6">
               <div className="flex-none">
                 <img
-                  src="../src/assets/kemkesjpg.jpg"
+                  src={LogoKemkes}
                   alt="Company"
                   className="rounded-xl w-14"
                 />
@@ -124,7 +136,7 @@ export default function ProfilePage() {
             <div className="flex gap-4 sm:gap-6">
               <div className="flex-none">
                 <img
-                  src="../src/assets/proedu.jpg"
+                  src={LogoProedu}
                   alt="Company"
                   className="rounded-xl w-14"
                 />
@@ -155,7 +167,7 @@ export default function ProfilePage() {
             <div className="flex gap-4 sm:gap-6">
               <div className="flex-none">
                 <img
-                  src="../src/assets/kemkesjpg.jpg"
+                  src={LogoKemkes}
                   alt="Company"
                   className="rounded-xl w-14"
                 />
