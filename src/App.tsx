@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ReactGA from "react-ga4";
 import { SiPhp, SiJavascript, SiCss3, SiHtml5, SiMysql, SiPostgresql, SiNestjs, SiJquery, SiCodeigniter, SiBootstrap, SiLaravel } from "react-icons/si";
 import Profile from "../src/assets/me.jpg"
 
@@ -13,6 +14,8 @@ import ProeduMurid from "../src/assets/landing-murid.png"
 
 import LogoKemkes from "../src/assets/kemkesjpg.jpg" 
 import LogoProedu from "../src/assets/proedu.jpg"
+
+ReactGA.initialize("G-R8CMZ455M3");
 
 export default function ProfilePage() {
   const [darkMode, setDarkMode] = useState(
